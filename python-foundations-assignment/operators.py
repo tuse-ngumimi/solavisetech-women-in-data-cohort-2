@@ -98,3 +98,52 @@ else:
     print(f"\n{sample_number} is an odd number.")           
     print(f"It is NOT divisible by 2. The result would be a decimal.")
 
+# Exercise 4: Student Grade Percentage Calculator
+print("\n" + "*" * 30)
+print("    GRADE PERCENTAGE CALCULATOR")
+print("*" * 30)
+
+total_marks: float = float(input("Enter the total marks for the course: "))
+marks_obtained: float = float(input("Enter the marks obtained by the student: "))
+if total_marks <= 0:
+    print("\nERROR: Total marks must be greater than zero.")
+else:
+    percentage: float = (marks_obtained / total_marks) * 100
+    print(f"\nThe student's grade percentage is: {percentage:.2f}%")
+
+# Exercise 4: BMI Calculator
+print("\n" + "*" * 30)
+print("    BMI CALCULATOR")
+print("*" * 30)
+
+user_height = float(input("Enter height (in metres): "))
+user_weight = float(input("Enter weight (in kg): "))
+
+bmi = user_weight / user_height * 2
+if bmi < 18.5:
+    print(f"\n Your Body Mass Index (BMI) is {bmi:.2f}")
+    print(f"You're underweight!")
+elif bmi >= 18.5 and bmi <= 24.9:
+    print(f"\n Your Body Mass Index (BMI) is {bmi:.2f}")
+    print(f"Your current body weight is healthy!")
+elif bmi >= 25.0 and bmi <= 29.9:
+    print(f"\n Your Body Mass Index (BMI) is {bmi:.2f}")
+    print(f"Based on your current body weight, you are overweight.")
+elif bmi > 30.0:
+    print(f"\n Your Body Mass Index (BMI) is {bmi:.2f}")
+    print(f"Based on your current body weight, you are obese.")
+
+# Exercise 6: Power and Modulus
+print("\n" + "*" * 30)
+print("    POWER & MODULUS")
+print("*" * 30)
+
+base_val  = int(input("  Enter base number     : "))
+exp_val   = int(input("  Enter exponent        : "))
+divisor   = int(input("  Enter divisor (for %) : "))
+ 
+power     = base_val ** exp_val
+remainder = base_val % divisor
+ 
+print(f"\n  {base_val} ^ {exp_val}  = {power}")
+print(f"  {base_val} mod {divisor}  = {remainder}")
