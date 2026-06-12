@@ -4,7 +4,7 @@ This repository contains my solution for the Week 5 assignment of the SWID Data 
 
 ##  Project Overview
 
-Real-world data is rarely perfectly clean. In this project, I stepped into the role of a data analyst to clean an e-commerce order dataset before it could be used for downstream analysis or pipeline integration. 
+In this project, I stepped into the role of a data analyst to clean an e-commerce order dataset before it could be used for downstream analysis or pipeline integration. 
 
 The raw dataset contained missing values across multiple data types (strings, categories, and numerical values), requiring different imputation strategies for each.
 
